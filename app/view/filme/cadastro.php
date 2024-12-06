@@ -43,10 +43,8 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
     }
 
 }
-
-
-
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -79,6 +77,13 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
             <button>Salvar</button>
         </form>
+        <a href="home.php">
+            <button>
+                <span class="material-symbols-outlined">
+                    keyboard_return
+                </span>
+            </button>
+        </a>
     </section>
 </body>
 </html>
