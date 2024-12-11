@@ -21,7 +21,7 @@ $filmes = $filmeModel->buscarTodos();
 </head>
 <body>
     <header>
-        <nav class=>
+        <nav>
             <ul>
                 <li><a href="/vitorg/catalogo-filmes/app/view/filme/home.php">Home</a></li>
                 <li><a href="/vitorg/catalogo-filmes/app/view/filme/cadastro.php">Cadastro</a></li>
@@ -32,7 +32,7 @@ $filmes = $filmeModel->buscarTodos();
 
     <?php foreach ($filmes as $filme){  ?>
         <form action="visualizar.php">
-            <input type="hidden" name="id" value="<?= $filme->id; ?>">
+            <input type="hidden" name="id" value="<?= $filme->id ?>">
                 <section class="containerCard">
                         <div class="cards">
                             <img class="img" src="<?php echo $filme->url ?>" alt="Foto do filme">

@@ -56,27 +56,33 @@ if($_SERVER["REQUEST_METHOD"] === "POST"){
 
 </head>
 <body>
-    <section class="container">
+    <section class="containerCad">
         <form action="cadastro.php" method="POST">
             <input type="hidden" name="id" value="<?php echo $filme->id ?>">
 
-            <div>
+            <div class="input">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" value="<?php echo $filme->nome ?>">
+                <input class="inputcx" type="text" name="nome" value="<?php echo $filme->nome ?>">
             </div>
 
-            <div>
+            <div class="input">
                 <label for="ano">Ano</label>
-                <input type="text" name="ano" value="<?php echo $filme->ano ?>">
+                <input class="inputcx" type="text" name="ano" value="<?php echo $filme->ano ?>">
             </div>
 
-            <div>
+            <div class="input">
                 <label for="descricao">Descricao</label>
-                <input type="text" name="descricao" value="<?php echo $filme->descricao ?>">
+                <input class="inputcx" type="text" name="descricao" value="<?php echo $filme->descricao ?>">
+            </div>
+
+            <div class="input">
+                <label for="url">Link da imagem</label>
+                <input class="inputcx" type="text" name="url" value="<?php echo $filme->url ?>">
             </div>
 
             <button>Salvar</button>
         </form>
+        <br>
         <a href="home.php">
             <button>
                 <span class="material-symbols-outlined">

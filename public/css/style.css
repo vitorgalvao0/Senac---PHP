@@ -128,14 +128,13 @@
 
     .containerCard{
         margin-top: 24px;
-        display:inline;
+        display:flex;
         flex-wrap:wrap;
         gap: 20px;
-        justify-content: center;
         padding: 20px;
     }
 
-    .containerCard .cards{
+    .cards{
         border: 1px solid black;
         width: 200px;
         display: flex;
@@ -171,6 +170,48 @@
 
     }
 
+/* Style na tela visualizar e cadastro */
     .cardCadastro{
-        border:  1px solid black;
+        padding: 10px;
+        justify-items: center;
+    }
+    
+    .img{
+        padding: 10px;
+        display: flex;
+        justify-content:left;
+    }
+
+    .buttonreturn{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 150px;
+    }
+
+    .containerCad{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .input{
+        padding: 5px;
+
+        input{
+            padding: 5px;
+        }
+    }
+
+    .inputcx{
+        background: none;
+        background-color:#8f9e96;
+    }
+
+    button{
+        border-radius: 10px;
+        background-color: var(--cor-fundo1);
+        color: #1d2420;
+        padding: 2px;
     }

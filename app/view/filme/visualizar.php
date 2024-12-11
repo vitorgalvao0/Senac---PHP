@@ -32,8 +32,11 @@ $filme = $filmeModel->buscarPorId($id);
                 <p>Ano : <?php echo $filme->ano?></p>
                 <p>Descrição : <?php echo $filme->descricao?></p>
         </div>
-            <img class="imgVisualizar" src="<?php echo $filme->url?>" alt="Foto do filme">
-                <br>
+        <div class="imgVisualizar" >
+            <img src="<?php echo $filme->url?>" alt="Foto do filme">
+        </div>
+            <br>
+                <div class="buttonreturn">
                     <a href="home.php">
                         <button>
                             <span class="material-symbols-outlined">
@@ -41,5 +44,6 @@ $filme = $filmeModel->buscarPorId($id);
                             </span>
                         </button>
                     </a>
+                </div>
 </body>
 </html>
